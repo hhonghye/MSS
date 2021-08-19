@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+table, th, td {
+  border-collapse: collapse; }
+
+fieldset, input, select, button, textarea {
+  outline: none;
+  border: none; }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+/*# sourceMappingURL=style.css.map */
