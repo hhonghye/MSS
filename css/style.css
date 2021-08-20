@@ -23,6 +23,54 @@ fieldset, input, select, button, textarea {
 #header {
   width: 100%;
   height: 50px;
-  border: 1px solid red; }
+  position: relative; }
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.header-bell,
+.header-heart,
+.header-bag {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px; }
+
+.header-bell {
+  left: 10px; }
+  .header-bell.alram::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #0078FF;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.header-heart {
+  right: 50px; }
+
+.header-bag {
+  right: 10px; }
+  .header-bag .header-bag__badge {
+    width: 18px;
+    height: 18px;
+    background-color: #0078FF;
+    border-radius: 9px;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 18px; }
 
 /*# sourceMappingURL=style.css.map */
