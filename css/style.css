@@ -20,4 +20,9 @@ fieldset, input, select, button, textarea {
   top: -9999px;
   opacity: 0; }
 
+#header {
+  width: 100%;
+  height: 50px;
+  border: 1px solid red; }
+
 /*# sourceMappingURL=style.css.map */

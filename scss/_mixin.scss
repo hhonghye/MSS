@@ -1,0 +1,42 @@
+@mixin font_system_m(){
+    font-weight: $w;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
+@mixin font_system_s(){
+    font-weight: $w;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
+@mixin font_musinsa_l(){
+    font-weight: $w;
+    font-size: 30px;
+    line-height: 39px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
+@mixin font_musinsa_m(){
+    font-weight: $w;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
+@mixin font_musinsa_s(){
+    font-weight: $w;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
+@mixin font_musinsa_xs(){
+    font-weight: $w;
+    font-size: 13px;
+    line-height: 19px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
