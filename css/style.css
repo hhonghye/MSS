@@ -22,6 +22,7 @@ fieldset, input, select, button, textarea {
 
 /* font */
 /* background img */
+/*----- header -----*/
 #header {
   width: 100%;
   height: 50px;
@@ -75,7 +76,68 @@ fieldset, input, select, button, textarea {
     text-align: center;
     line-height: 18px; }
 
+/*----- visual -----*/
 #visual {
-  width: 100%; }
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative; }
+
+.swiper {
+  width: 100%;
+  height: 100%; }
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; }
+  .swiper-slide .visual__txt {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .swiper-slide .visual__txt .visual__txt--top {
+      margin-top: 40px;
+      margin-left: 25px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .swiper-slide .visual__txt h2 {
+      display: flex;
+      width: 220px;
+      height: 220px;
+      margin-top: 75px;
+      margin-left: 25px;
+      align-items: flex-end;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 39px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .swiper-slide .visual__txt .visual__txt--bottom {
+      margin-top: 10px;
+      margin-left: 25px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #fff; }
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 25px !important; }
 
 /*# sourceMappingURL=style.css.map */

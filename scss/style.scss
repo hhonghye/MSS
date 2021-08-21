@@ -2,6 +2,7 @@
 @import "reset";
 @import "mixin";
 
+/*----- header -----*/
 #header{
     width: 100%; height: 50px;
     position: relative;
@@ -44,10 +45,58 @@
         line-height: 18px;
     }
 }
+
+/*----- visual -----*/
 #visual{
-    width: 100%; 
-    // @include bg_img($url: url(../img/visual/banner/img1.jpg));
+    width: 100%; height: auto;
+    overflow: hidden;
+    position: relative;
 }
+.swiper{
+    width: 100%; height: 100%;
+}
+.swiper-wrapper{
+    width: 100%; height: 100%;
+}
+.swiper-slide{
+    width: 100%; height: 100%;
+    position: relative;
+    img{
+        width: 100%; height: auto;
+        object-fit: cover;
+    }
+    .visual__txt{
+        position: absolute;
+        top: 0; left: 0;
+        .visual__txt--top{
+            margin-top: 40px;
+            margin-left: 25px;
+            @include font_musinsa_s($w: 500, $c: #fff);
+        }
+        h2{
+            display: flex;
+            width: 220px; height: 220px;
+            margin-top: 75px;
+            margin-left: 25px;
+            align-items: flex-end;
+            @include font_musinsa_l($w: 500, $c: #fff);
+        }
+        .visual__txt--bottom{
+            margin-top: 10px;
+            margin-left: 25px;
+            @include font_system_m($w: 400, $c: #fff);
+        }
+    }
+}
+.swiper-pagination{
+    .swiper-pagination-bullet {background: #fff;}
+    .swiper-pagination-bullet-active{background: #fff;}
+}
+//pagination 위치
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 25px !important;
+}
+
 
 
 
