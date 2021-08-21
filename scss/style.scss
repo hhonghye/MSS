@@ -44,7 +44,10 @@
         line-height: 18px;
     }
 }
-
+#visual{
+    width: 100%; 
+    // @include bg_img($url: url(../img/visual/banner/img1.jpg));
+}
 
 
 
