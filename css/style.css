@@ -127,12 +127,10 @@ fieldset, input, select, button, textarea {
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         color: #fff; }
   #visual .swiper-pagination-bullet {
+    margin-bottom: 25px;
     background: #fff; }
   #visual .swiper-pagination-bullet-active {
     background: #fff; }
-
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 25px !important; }
 
 /*----- 랭킹, 코디, 업데이트 -----*/
 #main {
@@ -435,35 +433,38 @@ fieldset, input, select, button, textarea {
         background-color: #333;
         line-height: 24px; }
 
-.sub-banner {
+.sub-banner.type1 {
   width: 100%;
   height: 90px;
   margin: 60px 0;
   position: relative; }
-  .sub-banner .swiper-wrapper {
+  .sub-banner.type1 .swiper-wrapper {
     width: 100%;
-    height: 100%;
-    overflow: hidden; }
-    .sub-banner .swiper-wrapper .swiper-slide {
-      background-color: #F9F9F9;
-      border-radius: 6px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: nowrap; }
-      .sub-banner .swiper-wrapper .swiper-slide img {
-        width: 135px;
-        height: 100%;
-        object-fit: contain;
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 6px; }
-      .sub-banner .swiper-wrapper .swiper-slide span {
-        display: inline-block;
-        padding: 0 15px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        color: 0; }
+    height: 100%; }
+  .sub-banner.type1 .swiper-slide {
+    background-color: #F9F9F9;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .sub-banner.type1 .swiper-slide img {
+      width: 135px;
+      height: 100%;
+      object-fit: contain;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px; }
+    .sub-banner.type1 .swiper-slide span {
+      display: inline-block;
+      padding: 0 15px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: 0; }
+  .sub-banner.type1 .swiper-pagination-bullets {
+    bottom: -25px !important; }
+  .sub-banner.type1 .swiper-pagination-bullet-active {
+    background: #000; }
 
 /*# sourceMappingURL=style.css.map */

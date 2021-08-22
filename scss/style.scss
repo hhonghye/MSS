@@ -83,12 +83,8 @@
             }
         }
     }
-    #{$this}-pagination-bullet {background: #fff;}
+    #{$this}-pagination-bullet {margin-bottom: 25px; background: #fff;}
     #{$this}-pagination-bullet-active{background: #fff;}
-}
-//pagination 위치
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 25px !important;
 }
 
 /*----- 랭킹, 코디, 업데이트 -----*/
@@ -273,36 +269,31 @@
         }
     }
 }
-.sub-banner{
+.sub-banner.type1{
     width: 100%; height: 90px;
     margin: 60px 0;
     position: relative;
-    // $this: '.swiper';
-    // #{$this}{
-    //     width: 100%; height: 90px;
-    // }
-    .swiper-wrapper{
+    $this: '.swiper';
+    #{$this}-wrapper{
         width: 100%; height: 100%;
-        overflow: hidden;
-        .swiper-slide{
-            background-color: #F9F9F9;
-            border-radius: 6px;
-            display: flex; justify-content: flex-start; align-items: center; flex-wrap: nowrap;
-            img{
-                width: 135px; height: 100%; object-fit: contain;
-                border-top-left-radius: 6px;
-                border-bottom-left-radius: 6px;
-            }
-            span{
-                display: inline-block;
-                padding: 0 15px;
-                @include font_musinsa_s($w:500, $c:000);
-            }
+    }
+    #{$this}-slide{
+        background-color: #F9F9F9;
+        border-radius: 6px;
+        display: flex; justify-content: flex-start; align-items: center; flex-wrap: nowrap;
+        img{
+            width: 135px; height: 100%; object-fit: contain;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        span{
+            display: inline-block;
+            padding: 0 15px;
+            @include font_musinsa_s($w:500, $c:000);
         }
     }
-    .swiper-pagination{
-        // bottom: -50px;
-    }
+    #{$this}-pagination-bullets {bottom: -25px !important;}
+    #{$this}-pagination-bullet-active{background: #000;}
 }
 
 
