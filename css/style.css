@@ -433,38 +433,249 @@ fieldset, input, select, button, textarea {
         background-color: #333;
         line-height: 24px; }
 
-.sub-banner.type1 {
+.sub-banner {
   width: 100%;
   height: 90px;
-  margin: 60px 0;
+  margin: 60px 0 75px;
   position: relative; }
-  .sub-banner.type1 .swiper-wrapper {
+  .sub-banner .swiper-wrapper {
     width: 100%;
     height: 100%; }
-  .sub-banner.type1 .swiper-slide {
-    background-color: #F9F9F9;
-    border-radius: 6px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap; }
-    .sub-banner.type1 .swiper-slide img {
-      width: 135px;
-      height: 100%;
-      object-fit: contain;
-      border-top-left-radius: 6px;
-      border-bottom-left-radius: 6px; }
-    .sub-banner.type1 .swiper-slide span {
-      display: inline-block;
-      padding: 0 15px;
+  .sub-banner .swiper-slide {
+    border-radius: 6px; }
+  .sub-banner .swiper-pagination-bullets {
+    bottom: -25px !important; }
+  .sub-banner .swiper-pagination-bullet-active {
+    background: #000; }
+
+.sub-banner.type1 .swiper-slide {
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .sub-banner.type1 .swiper-slide img {
+    width: 135px;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; }
+  .sub-banner.type1 .swiper-slide span {
+    display: inline-block;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: 0; }
+
+.sub-banner.type2 .swiper-slide {
+  background-color: #484848; }
+  .sub-banner.type2 .swiper-slide img {
+    width: 135px;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: -10px;
+    right: 0; }
+  .sub-banner.type2 .swiper-slide .sub-banner__txt {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%); }
+    .sub-banner.type2 .swiper-slide .sub-banner__txt p {
       font-weight: 500;
       font-size: 15px;
       line-height: 22px;
       font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-      color: 0; }
-  .sub-banner.type1 .swiper-pagination-bullets {
-    bottom: -25px !important; }
-  .sub-banner.type1 .swiper-pagination-bullet-active {
-    background: #000; }
+      color: #fff; }
+    .sub-banner.type2 .swiper-slide .sub-banner__txt span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff;
+      opacity: 65%; }
+
+.ranking__goods-list ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%; }
+  .ranking__goods-list ul li {
+    width: calc(100% /3);
+    height: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative; }
+    .ranking__goods-list ul li img {
+      width: 100%;
+      height: 36vw;
+      object-fit: contain; }
+    .ranking__goods-list ul li .goods-list__store {
+      padding-top: 10px;
+      padding-right: 3px;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #777; }
+    .ranking__goods-list ul li .goods-list__price {
+      padding-right: 3px;
+      box-sizing: border-box;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #000; }
+      .ranking__goods-list ul li .goods-list__price .discount {
+        display: inline-block;
+        margin-right: 2px;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #FF0000; }
+      .ranking__goods-list ul li .goods-list__price .coupon {
+        display: inline-block;
+        width: 22px;
+        height: 15px;
+        background-color: #4162C9;
+        border-radius: 2px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 15px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(1)::after {
+      content: "6";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(2)::after {
+      content: "7";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(3)::after {
+      content: "8";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(4)::after {
+      content: "9";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(5)::after {
+      content: "10";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(6)::after {
+      content: "11";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(7)::after {
+      content: "12";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(8)::after {
+      content: "13";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
+    .ranking__goods-list ul li:nth-of-type(9)::after {
+      content: "14";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
