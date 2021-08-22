@@ -98,7 +98,7 @@
 }
 
 /*----- 랭킹, 코디, 업데이트 탭 -----*/
-#main-tab{
+#main{
     width: 100%;
     padding: 15px; box-sizing: border-box;
 }
@@ -106,7 +106,7 @@
     width: 100%; height: 40px;
     border-radius: 6px;
     background-color: #F5F5F5;
-    margin-top: 15px;
+    margin: 15px 0;
     ul{
         width: 100%; height: 100%;
         &::after{content: ""; display: block; clear: both;}
@@ -134,8 +134,44 @@
     }
 }
 .main-tab__content{
-
+    width: 100%;
+    height: 500px; //임의설정
 }
+#main-tab__menu--ranking{
+    .title{
+        width: 100%; height: 40px;
+        &::after{content: ""; display: block; clear: both;}
+        h3{
+            float: left;
+            @include font_musinsa_m($w: 400, $c: #000);
+            line-height: 40px;
+            padding-right: 8px;
+        }
+        .title__entire{
+            float: left;
+            height: 100%;
+            a{
+                display: inline-block;
+                height: 100%;
+                @include font_system_s($w: 400, $c: #777);
+                line-height: 40px;
+                img{display: inline-block; margin-left: 2px;}
+            }
+            
+        }
+        .title__age{
+            float: right;
+            height: 100%;
+            a{
+                display: inline-block;
+                height: 100%;
+                @include font_system_m($w: 400, $c: #000);
+                line-height: 40px;
+                img{display: inline-block; margin-left: 5px;}
+            }
+        }
 
+    }
+}
 
 
