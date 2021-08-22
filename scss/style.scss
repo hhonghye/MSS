@@ -136,7 +136,6 @@
 }
 .main-tab__content{
     width: 100%;
-    height: 500px; //-------------------임의설정 삭제!!
 }
 .ranking__title{
     width: 100%; height: 40px;
@@ -211,6 +210,7 @@
         li{
             width: calc(100% /3); height: 100%;
             margin-bottom: 20px;
+            // padding-right: 3px; box-sizing: border-box;
             cursor: pointer;
             position: relative;
             img{
@@ -226,7 +226,25 @@
             .goods-list__price{
                 padding-right: 3px;
                 box-sizing: border-box;
+                position: relative;
                 @include font_musinsa_s($w:500, $c: #000);
+                &.coupon::after{
+                    content: "쿠폰";
+                    position: absolute;
+                    top: 50%; right: 2px; transform: translateY(-50%);
+                    width: 22px; height: 15px;
+                    background-color: #4162C9;
+                    border-radius: 2px;
+                    text-align: center;
+                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: #fff);
+                }
+                span{
+                    position: absolute;
+                    top: 50%; right: 2px; transform: translateY(-50%);
+                    display: inline-block;
+                    margin-right: 2px;
+                    @include font_musinsa($w: 500, $s: 10px, $lh: 13px, $c: #FF0000);
+                }
             }
             //순위 라벨
             @for $i from 1 through 5{
@@ -237,8 +255,7 @@
                     top: 0; left: 0;
                     background-color: #aaa;
                     text-align: center;
-                    @include font_musinsa_xxs($w:500, $c:#fff);
-                    line-height: 20px;
+                    @include font_musinsa($w: 500, $s: 12px, $lh: 20px, $c: #fff);
                 }
             }
             &:nth-of-type(1),
@@ -246,7 +263,11 @@
                 width: 50%;
                 img{height: 55vw;}
                 .goods-list__store,
-                .goods-list__price{padding-right: 5px;}
+                .goods-list__price{
+                    padding-right: 5px;
+                    &.coupon::after{right: 5px;}
+                    span{@include font_musinsa($w: 500, $s: 15px, $lh: 22px, $c: #FF0000); right: 5px;}
+                }
                 //1st, 2nd 순위 라벨 
                 &::after{
                     width: 24px; height: 24px;

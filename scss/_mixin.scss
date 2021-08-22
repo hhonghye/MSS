@@ -48,6 +48,13 @@
     font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
     color: $c;
 }
+@mixin font_musinsa($w, $s, $lh, $c){
+    font-weight: $w;
+    font-size: $s;
+    line-height: $lh;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: $c;
+}
 
 /* background img */
 @mixin bg_img($url){
