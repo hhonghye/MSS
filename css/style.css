@@ -83,60 +83,53 @@ fieldset, input, select, button, textarea {
   height: auto;
   overflow: hidden;
   position: relative; }
-
-.swiper {
-  width: 100%;
-  height: 100%; }
-
-.swiper-wrapper {
-  width: 100%;
-  height: 100%; }
-
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-  position: relative; }
-  .swiper-slide img {
+  #visual .swiper-wrapper {
     width: 100%;
-    height: auto;
-    object-fit: cover; }
-  .swiper-slide .visual__txt {
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .swiper-slide .visual__txt .visual__txt--top {
-      margin-top: 40px;
-      margin-left: 25px;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 22px;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-      color: #fff; }
-    .swiper-slide .visual__txt h2 {
-      display: flex;
-      width: 220px;
-      height: 220px;
-      margin-top: 75px;
-      margin-left: 25px;
-      align-items: flex-end;
-      font-weight: 500;
-      font-size: 30px;
-      line-height: 39px;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-      color: #fff; }
-    .swiper-slide .visual__txt .visual__txt--bottom {
-      margin-top: 10px;
-      margin-left: 25px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-      color: #fff; }
-
-.swiper-pagination .swiper-pagination-bullet {
-  background: #fff; }
-.swiper-pagination .swiper-pagination-bullet-active {
-  background: #fff; }
+    height: 100%; }
+  #visual .swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #visual .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+    #visual .swiper-slide .visual__txt {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      #visual .swiper-slide .visual__txt .visual__txt--top {
+        margin-top: 40px;
+        margin-left: 25px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #fff; }
+      #visual .swiper-slide .visual__txt h2 {
+        display: flex;
+        width: 220px;
+        height: 220px;
+        margin-top: 75px;
+        margin-left: 25px;
+        align-items: flex-end;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 39px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #fff; }
+      #visual .swiper-slide .visual__txt .visual__txt--bottom {
+        margin-top: 10px;
+        margin-left: 25px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #fff; }
+  #visual .swiper-pagination-bullet {
+    background: #fff; }
+  #visual .swiper-pagination-bullet-active {
+    background: #fff; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 25px !important; }
@@ -441,5 +434,36 @@ fieldset, input, select, button, textarea {
         height: 24px;
         background-color: #333;
         line-height: 24px; }
+
+.sub-banner {
+  width: 100%;
+  height: 90px;
+  margin: 60px 0;
+  position: relative; }
+  .sub-banner .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .sub-banner .swiper-wrapper .swiper-slide {
+      background-color: #F9F9F9;
+      border-radius: 6px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .sub-banner .swiper-wrapper .swiper-slide img {
+        width: 135px;
+        height: 100%;
+        object-fit: contain;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px; }
+      .sub-banner .swiper-wrapper .swiper-slide span {
+        display: inline-block;
+        padding: 0 15px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: 0; }
 
 /*# sourceMappingURL=style.css.map */

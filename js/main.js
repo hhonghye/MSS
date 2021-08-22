@@ -17,7 +17,7 @@
 
 
 /* swiper연결 */
-var swiper = new Swiper('#visual .swiper', {
+var swiper = new Swiper('#visual', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -28,3 +28,8 @@ var swiper = new Swiper('#visual .swiper', {
     //     disableOnInteraction: false, //스와이프 후 자동재생
     // }
 });
+var swiper = new Swiper('.sub-banner', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
