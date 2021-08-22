@@ -97,11 +97,12 @@
     bottom: 25px !important;
 }
 
-/*----- 랭킹, 코디, 업데이트 탭 -----*/
+/*----- 랭킹, 코디, 업데이트 -----*/
 #main{
     width: 100%;
     padding: 15px; box-sizing: border-box;
 }
+/* 메인 탭 */
 .main-tab__menu{
     width: 100%; height: 40px;
     border-radius: 6px;
@@ -135,9 +136,9 @@
 }
 .main-tab__content{
     width: 100%;
-    height: 500px; //임의설정
+    height: 500px; //-------------------임의설정 삭제!!
 }
-#main-tab__menu--ranking{
+#main-tab__menu__ranking{
     .title{
         width: 100%; height: 40px;
         &::after{content: ""; display: block; clear: both;}
@@ -170,7 +171,38 @@
                 img{display: inline-block; margin-left: 5px;}
             }
         }
+    }
+    /* 서브 탭 */
+    .sub-tab{
+        width: auto; height: auto;
+        padding: 10px 0; box-sizing: border-box;
+        ul{
+            width: auto;height: 100%;
+            white-space: nowrap; overflow-x: auto;
+            //스크롤바 안보이게 설정
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+            &::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
+            li{
+                display: inline-block;
+                margin-right: 8px;
+                &:last-of-type{margin-right: 0;}
+                a{
+                    display: inline-block;
+                    @include font_system_m($w: 400, $c: #aaa);
+                    padding: 5px 10px 4px;
+                    border: 1px solid #aaa; box-sizing: border-box;
+                    border-radius: 4px;
+                }
+                &.target{
+                    a{
+                        @include font_system_m($w: 700, $c: #000);
+                        border: 1px solid #000;
+                    }
+                }
 
+            }
+        }
     }
 }
 
