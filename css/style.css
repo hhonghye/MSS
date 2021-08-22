@@ -193,93 +193,217 @@ fieldset, input, select, button, textarea {
   width: 100%;
   height: 500px; }
 
-#main-tab__menu__ranking {
-  /* 서브 탭 */ }
-  #main-tab__menu__ranking .title {
-    width: 100%;
-    height: 40px; }
-    #main-tab__menu__ranking .title::after {
-      content: "";
-      display: block;
-      clear: both; }
-    #main-tab__menu__ranking .title h3 {
-      float: left;
+.ranking__title {
+  width: 100%;
+  height: 40px; }
+  .ranking__title::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .ranking__title h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #000;
+    line-height: 40px;
+    padding-right: 8px; }
+  .ranking__title .ranking__title__entire {
+    float: left;
+    height: 100%; }
+    .ranking__title .ranking__title__entire a {
+      display: inline-block;
+      height: 100%;
       font-weight: 400;
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #777;
+      line-height: 40px; }
+      .ranking__title .ranking__title__entire a img {
+        display: inline-block;
+        margin-left: 2px; }
+  .ranking__title .ranking__title__age {
+    float: right;
+    height: 100%; }
+    .ranking__title .ranking__title__age a {
+      display: inline-block;
+      height: 100%;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
       font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
       color: #000;
-      line-height: 40px;
-      padding-right: 8px; }
-    #main-tab__menu__ranking .title .title__entire {
-      float: left;
-      height: 100%; }
-      #main-tab__menu__ranking .title .title__entire a {
+      line-height: 40px; }
+      .ranking__title .ranking__title__age a img {
         display: inline-block;
-        height: 100%;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        color: #777;
-        line-height: 40px; }
-        #main-tab__menu__ranking .title .title__entire a img {
-          display: inline-block;
-          margin-left: 2px; }
-    #main-tab__menu__ranking .title .title__age {
-      float: right;
-      height: 100%; }
-      #main-tab__menu__ranking .title .title__age a {
+        margin-left: 5px; }
+
+/* 서브 탭 */
+.ranking__sub-tab {
+  width: auto;
+  height: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin-bottom: 15px; }
+  .ranking__sub-tab ul {
+    width: auto;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */ }
+    .ranking__sub-tab ul::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, Opera*/ }
+    .ranking__sub-tab ul li {
+      display: inline-block;
+      margin-right: 8px; }
+      .ranking__sub-tab ul li:last-of-type {
+        margin-right: 0; }
+      .ranking__sub-tab ul li a {
         display: inline-block;
-        height: 100%;
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #aaa;
+        padding: 5px 10px 4px;
+        border: 1px solid #aaa;
+        box-sizing: border-box;
+        border-radius: 4px; }
+      .ranking__sub-tab ul li.target a {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         color: #000;
-        line-height: 40px; }
-        #main-tab__menu__ranking .title .title__age a img {
-          display: inline-block;
-          margin-left: 5px; }
-  #main-tab__menu__ranking .sub-tab {
-    width: auto;
-    height: auto;
-    padding: 10px 0;
-    box-sizing: border-box; }
-    #main-tab__menu__ranking .sub-tab ul {
-      width: auto;
-      height: 100%;
-      white-space: nowrap;
-      overflow-x: auto;
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */ }
-      #main-tab__menu__ranking .sub-tab ul::-webkit-scrollbar {
-        display: none;
-        /* Chrome, Safari, Opera*/ }
-      #main-tab__menu__ranking .sub-tab ul li {
-        display: inline-block;
-        margin-right: 8px; }
-        #main-tab__menu__ranking .sub-tab ul li:last-of-type {
-          margin-right: 0; }
-        #main-tab__menu__ranking .sub-tab ul li a {
-          display: inline-block;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 21px;
-          font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-          color: #aaa;
-          padding: 5px 10px 4px;
-          border: 1px solid #aaa;
-          box-sizing: border-box;
-          border-radius: 4px; }
-        #main-tab__menu__ranking .sub-tab ul li.target a {
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 21px;
-          font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-          color: #000;
-          border: 1px solid #000; }
+        border: 1px solid #000; }
+
+.ranking__goods-list--top ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%; }
+  .ranking__goods-list--top ul li {
+    width: calc(100% /3);
+    height: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative; }
+    .ranking__goods-list--top ul li img {
+      width: 100%;
+      height: 36vw;
+      object-fit: contain; }
+    .ranking__goods-list--top ul li .goods-list__store {
+      padding-top: 10px;
+      padding-right: 3px;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #777; }
+    .ranking__goods-list--top ul li .goods-list__price {
+      padding-right: 3px;
+      box-sizing: border-box;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #000; }
+    .ranking__goods-list--top ul li:nth-of-type(1)::after {
+      content: "1";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff;
+      line-height: 20px; }
+    .ranking__goods-list--top ul li:nth-of-type(2)::after {
+      content: "2";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff;
+      line-height: 20px; }
+    .ranking__goods-list--top ul li:nth-of-type(3)::after {
+      content: "3";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff;
+      line-height: 20px; }
+    .ranking__goods-list--top ul li:nth-of-type(4)::after {
+      content: "4";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff;
+      line-height: 20px; }
+    .ranking__goods-list--top ul li:nth-of-type(5)::after {
+      content: "5";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #aaa;
+      text-align: center;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #fff;
+      line-height: 20px; }
+    .ranking__goods-list--top ul li:nth-of-type(1), .ranking__goods-list--top ul li:nth-of-type(2) {
+      width: 50%; }
+      .ranking__goods-list--top ul li:nth-of-type(1) img, .ranking__goods-list--top ul li:nth-of-type(2) img {
+        height: 55vw; }
+      .ranking__goods-list--top ul li:nth-of-type(1) .goods-list__store,
+      .ranking__goods-list--top ul li:nth-of-type(1) .goods-list__price, .ranking__goods-list--top ul li:nth-of-type(2) .goods-list__store,
+      .ranking__goods-list--top ul li:nth-of-type(2) .goods-list__price {
+        padding-right: 5px; }
+      .ranking__goods-list--top ul li:nth-of-type(1)::after, .ranking__goods-list--top ul li:nth-of-type(2)::after {
+        width: 24px;
+        height: 24px;
+        background-color: #333;
+        line-height: 24px; }
 
 /*# sourceMappingURL=style.css.map */
