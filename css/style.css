@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px; }
@@ -139,5 +140,52 @@ fieldset, input, select, button, textarea {
 
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 25px !important; }
+
+/*----- 랭킹, 코디, 업데이트 탭 -----*/
+#main-tab {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box; }
+
+.main-tab__menu {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #F5F5F5;
+  margin-top: 15px; }
+  .main-tab__menu ul {
+    width: 100%;
+    height: 100%; }
+    .main-tab__menu ul::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .main-tab__menu ul li {
+      float: left;
+      width: calc(100% / 3);
+      height: 100%; }
+      .main-tab__menu ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        color: #aaa;
+        line-height: 39px; }
+      .main-tab__menu ul li.target {
+        border: 1px solid #eee;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 4px; }
+        .main-tab__menu ul li.target a {
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 19px;
+          font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+          color: #000;
+          line-height: 39px; }
 
 /*# sourceMappingURL=style.css.map */

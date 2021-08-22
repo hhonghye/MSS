@@ -97,9 +97,45 @@
     bottom: 25px !important;
 }
 
+/*----- 랭킹, 코디, 업데이트 탭 -----*/
+#main-tab{
+    width: 100%;
+    padding: 15px; box-sizing: border-box;
+}
+.main-tab__menu{
+    width: 100%; height: 40px;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    margin-top: 15px;
+    ul{
+        width: 100%; height: 100%;
+        &::after{content: ""; display: block; clear: both;}
+        li{
+            float: left;
+            width: calc(100% / 3); height: 100%;
+            a{
+                display: inline-block;
+                width: 100%; height: 100%;
+                text-align: center;
+                @include font_musinsa_xs($w: 500, $c: #aaa);
+                line-height: 39px; //40px - 1px
+            }
+            &.target{
+                border: 1px solid #eee; box-sizing: border-box;
+                background-color: #fff;
+                border-radius: 4px;
+                a{
+                    @include font_musinsa_xs($w: 500, $c: #000);
+                    line-height: 39px; //40px - 1px
+                }
 
+            }
+        }
+    }
+}
+.main-tab__content{
 
-
+}
 
 
 
