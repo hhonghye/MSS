@@ -133,6 +133,10 @@
         display: block;
     }
 }
+#main-tab__menu__ranking,
+#main-tab__menu__coordi,
+#main-tab__menu__update{overflow: hidden;}
+
 .ranking__title{
     width: 100%; height: 40px;
     &::after{content: ""; display: block; clear: both;}

@@ -1,12 +1,15 @@
 /*----- DOM Caching -----*/
 var $main_tab__menu = $(".main-tab__menu").children("ul").children("li");
 var $main_tab__content = $(".main-tab__content").children("div");
+// var $sub_tab = $(".sub-tab");
+// var $sub_tab__menu = $sub_tab.children("ul").children("li");
 let isDone = true;
 
 /*----- function -----*/
 
 
 /*----- event -----*/
+//main tab menu
 $main_tab__menu.on("click", function(e){
     e.preventDefault();
 
@@ -17,20 +20,37 @@ $main_tab__menu.on("click", function(e){
         isDone = false; 
         var i = $(this).index();
 
-        mainTabActivation(i, $main_tab__menu);
-        mainTabActivation(i, $main_tab__content);
+        tabActivation(i, $main_tab__menu);
+        tabActivation(i, $main_tab__content);
     }
 
 })
 
+//sub tab menu
+$sub_tab__menu.on("click", function(e){
+    e.preventDefault();
+
+    var hasTarget = $(this).hasClass("target");
+    if(hasTarget) return;
+
+    var i = $(this).index();
+
+    tabActivation(i, $sub_tab__menu);
+
+    // var posX = $(this).offset().left;
+
+    
+})
 
 /*----- function definition -----*/
-function mainTabActivation(index, item){
+function tabActivation(index, item){
 	item.removeClass("target"); 
     item.eq(index).addClass("target"); 
     isDone = true;
 }
+function subTabScroll(){
 
+}
 
 
 
