@@ -127,6 +127,12 @@
 .main-tab__content{
     width: 100%;
 }
+.main-tab__content>div{
+    display: none;
+    &.target{
+        display: block;
+    }
+}
 .ranking__title{
     width: 100%; height: 40px;
     &::after{content: ""; display: block; clear: both;}
