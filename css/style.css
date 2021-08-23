@@ -95,23 +95,27 @@ fieldset, input, select, button, textarea {
       height: auto;
       object-fit: cover; }
     #visual .swiper-slide .visual__txt {
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0; }
       #visual .swiper-slide .visual__txt .visual__txt--top {
-        margin-top: 40px;
-        margin-left: 25px;
+        position: absolute;
+        top: 40px;
+        left: 25px;
         font-weight: 500;
         font-size: 15px;
         line-height: 22px;
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         color: #fff; }
       #visual .swiper-slide .visual__txt h2 {
+        position: absolute;
+        bottom: 100px;
+        left: 25px;
         display: flex;
         width: 220px;
         height: 220px;
-        margin-top: 75px;
-        margin-left: 25px;
         align-items: flex-end;
         font-weight: 500;
         font-size: 30px;
@@ -119,8 +123,9 @@ fieldset, input, select, button, textarea {
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         color: #fff; }
       #visual .swiper-slide .visual__txt .visual__txt--bottom {
-        margin-top: 10px;
-        margin-left: 25px;
+        position: absolute;
+        bottom: 70px;
+        left: 25px;
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;

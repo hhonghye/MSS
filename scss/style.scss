@@ -61,24 +61,31 @@
             object-fit: cover;
         }
         .visual__txt{
+            width: 100%; height: 100%;
             position: absolute;
             top: 0; left: 0;
             .visual__txt--top{
-                margin-top: 40px;
-                margin-left: 25px;
+                position: absolute;
+                top: 40px; left: 25px;
+                // margin-top: 40px;
+                // margin-left: 25px;
                 @include font_musinsa_s($w: 500, $c: #fff);
             }
             h2{
+                position: absolute;
+                bottom: 100px; left: 25px;
                 display: flex;
                 width: 220px; height: 220px;
-                margin-top: 75px;
-                margin-left: 25px;
+                // margin-top: 75px;
+                // margin-left: 25px;
                 align-items: flex-end;
                 @include font_musinsa_l($w: 500, $c: #fff);
             }
             .visual__txt--bottom{
-                margin-top: 10px;
-                margin-left: 25px;
+                position: absolute;
+                bottom: 70px; left: 25px;
+                // margin-top: 10px;
+                // margin-left: 25px;
                 @include font_system_m($w: 400, $c: #fff);
             }
         }
