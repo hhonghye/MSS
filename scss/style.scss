@@ -392,12 +392,12 @@
     }
 }
 .ranking__refresh{padding-top: 20px; @include font_system_s($w:400, $c: #aaa);}
-.ranking__btn{
+.main-btn{
     width: 100%; height: 100%;
     text-align: center;
-    padding-top: 7px; padding-bottom: 100px;
+    padding-top: 7px; 
 }
-.ranking__btn--showall{
+.main-btn--showall{
     display: inline-block;
     text-align: center;
     padding: 0 16px;
@@ -414,7 +414,7 @@
 }
 
 /* 코디 */
-.coordi-list--top{
+.coordi-list{
     width: 100%;
     ul{
         &::after{content: ""; display: block; clear: both;}
@@ -422,7 +422,7 @@
             float: left;
             width: 49%; 
             margin-right: 2%;
-            margin-bottom: 25px;
+            margin-bottom: 3px;
             box-sizing: border-box;
             &:nth-of-type(even){margin-right: 0;}
         }
@@ -430,17 +430,54 @@
 }
 .coordi__coordi-link{
     display: block;
-    margin-bottom: 10px;
     img{width: 100%; height: 100%;}
 }
 .coordi__goods-link{
     width: 100%; height: 100%;
     display: flex; justify-content: flex-start; align-items: center;
-    img{width: 45px; height: 54px;}
+    margin-top: 10px;
+    margin-bottom: 22px;
+    img{width: 45px; height: 54px; object-fit: cover;}
 }
 .coordi__goods-link__txt{
     padding-left: 10px;
     p{@include font_system_s($w: 400, $c: #777);}
     .coordi__goods-link__price{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: #000);}
     .coordi__goods-link__discount{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: #ff0000); padding-left: 3px;}
+}
+/* 숍, 맵, 스냅 */ 
+.coordi-list__menu{
+    width: 100%;
+    ul{
+        &::after{content: ""; display: block; clear: both;}
+        li{
+            float: left;
+            width: 49%; 
+            margin-right: 2%;
+            margin-bottom: 3px;
+            box-sizing: border-box;
+            &:nth-of-type(even){margin-right: 0;}
+        }
+    }
+}
+.coordi-list__tab{
+    position: relative;
+    a{
+        color: #000;
+        img{
+            width: 100%; height: 100%;
+        }
+        span{
+            position: absolute;
+            bottom: 0; left: 0;
+            display: inline-block;
+            text-align: center;
+            width: 100%; height: 36px;
+            background-color: #f9f9f9;
+            @include font_system_s($w: 400, $c: 000);
+            line-height: 36px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
 }
