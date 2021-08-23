@@ -104,6 +104,8 @@
         li{
             float: left;
             width: calc(100% / 3); height: 100%;
+            border: 1px solid transparent;
+            box-sizing: border-box;
             a{
                 display: inline-block;
                 width: 100%; height: 100%;
@@ -137,6 +139,7 @@
 #main-tab__menu__coordi,
 #main-tab__menu__update{overflow: hidden;}
 
+/* 랭킹 */
 .ranking__title{
     width: 100%; height: 40px;
     &::after{content: ""; display: block; clear: both;}
@@ -171,7 +174,7 @@
     }
 }
 /* 서브 탭 */
-.ranking__sub-tab{
+.sub-tab{
     width: auto; height: auto;
     padding: 10px 0; box-sizing: border-box;
     margin-bottom: 15px;
@@ -408,4 +411,36 @@
         display: inline-block;
         margin-left: 8px;
     }
+}
+
+/* 코디 */
+.coordi-list--top{
+    width: 100%;
+    ul{
+        &::after{content: ""; display: block; clear: both;}
+        li{
+            float: left;
+            width: 49%; 
+            margin-right: 2%;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            &:nth-of-type(even){margin-right: 0;}
+        }
+    }
+}
+.coordi__coordi-link{
+    display: block;
+    margin-bottom: 10px;
+    img{width: 100%; height: 100%;}
+}
+.coordi__goods-link{
+    width: 100%; height: 100%;
+    display: flex; justify-content: flex-start; align-items: center;
+    img{width: 45px; height: 54px;}
+}
+.coordi__goods-link__txt{
+    padding-left: 10px;
+    p{@include font_system_s($w: 400, $c: #777);}
+    .coordi__goods-link__price{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: #000);}
+    .coordi__goods-link__discount{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: #ff0000); padding-left: 3px;}
 }

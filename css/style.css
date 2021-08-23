@@ -155,7 +155,9 @@ fieldset, input, select, button, textarea {
     .main-tab__menu ul li {
       float: left;
       width: calc(100% / 3);
-      height: 100%; }
+      height: 100%;
+      border: 1px solid transparent;
+      box-sizing: border-box; }
       .main-tab__menu ul li a {
         display: inline-block;
         width: 100%;
@@ -193,6 +195,7 @@ fieldset, input, select, button, textarea {
 #main-tab__menu__update {
   overflow: hidden; }
 
+/* 랭킹 */
 .ranking__title {
   width: 100%;
   height: 40px; }
@@ -241,13 +244,13 @@ fieldset, input, select, button, textarea {
         margin-left: 5px; }
 
 /* 서브 탭 */
-.ranking__sub-tab {
+.sub-tab {
   width: auto;
   height: auto;
   padding: 10px 0;
   box-sizing: border-box;
   margin-bottom: 15px; }
-  .ranking__sub-tab ul {
+  .sub-tab ul {
     width: auto;
     height: 100%;
     white-space: nowrap;
@@ -256,15 +259,15 @@ fieldset, input, select, button, textarea {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */ }
-    .ranking__sub-tab ul::-webkit-scrollbar {
+    .sub-tab ul::-webkit-scrollbar {
       display: none;
       /* Chrome, Safari, Opera*/ }
-    .ranking__sub-tab ul li {
+    .sub-tab ul li {
       display: inline-block;
       margin-right: 8px; }
-      .ranking__sub-tab ul li:last-of-type {
+      .sub-tab ul li:last-of-type {
         margin-right: 0; }
-      .ranking__sub-tab ul li a {
+      .sub-tab ul li a {
         display: inline-block;
         font-weight: 400;
         font-size: 14px;
@@ -275,7 +278,7 @@ fieldset, input, select, button, textarea {
         border: 1px solid #aaa;
         box-sizing: border-box;
         border-radius: 4px; }
-      .ranking__sub-tab ul li.target a {
+      .sub-tab ul li.target a {
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
@@ -770,5 +773,62 @@ fieldset, input, select, button, textarea {
   .ranking__btn--showall img {
     display: inline-block;
     margin-left: 8px; }
+
+/* 코디 */
+.coordi-list--top {
+  width: 100%; }
+  .coordi-list--top ul::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .coordi-list--top ul li {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    box-sizing: border-box; }
+    .coordi-list--top ul li:nth-of-type(even) {
+      margin-right: 0; }
+
+.coordi__coordi-link {
+  display: block;
+  margin-bottom: 10px; }
+  .coordi__coordi-link img {
+    width: 100%;
+    height: 100%; }
+
+.coordi__goods-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .coordi__goods-link img {
+    width: 45px;
+    height: 54px; }
+
+.coordi__goods-link__txt {
+  padding-left: 10px; }
+  .coordi__goods-link__txt p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #777; }
+  .coordi__goods-link__txt .coordi__goods-link__price {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #000; }
+  .coordi__goods-link__txt .coordi__goods-link__discount {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #ff0000;
+    padding-left: 3px; }
 
 /*# sourceMappingURL=style.css.map */

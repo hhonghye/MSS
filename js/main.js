@@ -1,8 +1,8 @@
 /*----- DOM Caching -----*/
 var $main_tab__menu = $(".main-tab__menu").children("ul").children("li");
 var $main_tab__content = $(".main-tab__content").children("div");
-// var $sub_tab = $(".sub-tab");
-// var $sub_tab__menu = $sub_tab.children("ul").children("li");
+var $sub_tab = $(".sub-tab");
+var $sub_tab__menu = $sub_tab.children("ul").children("li");
 let isDone = true;
 
 /*----- function -----*/
