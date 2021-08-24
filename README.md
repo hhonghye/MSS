@@ -2,9 +2,9 @@
 
 ## 과제 설명
 ### 핵심 사용 기술
-- SCSS
 - jQuery
 - AJAX
+- SCSS
 - BEM 방법론
 
 #### Library

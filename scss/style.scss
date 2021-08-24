@@ -23,7 +23,7 @@
     &.alram::after{
         content: "";
         width: 4px; height: 4px;
-        background-color: #0078FF;
+        background-color: $color_blue1;
         border-radius: 2px;
         position: absolute;
         top: 0; right: 0;
@@ -36,11 +36,11 @@
     right: 10px;
     .header-bag__badge{
         width: 18px; height: 18px;
-        background-color: #0078FF;
+        background-color: $color_blue1;
         border-radius: 9px;
         position: absolute;
         bottom: -3px; right: -3px;
-        @include font_musinsa_xxs($w: 500, $c:#fff);
+        @include font_musinsa_xxs($w: 500, $c:$color_white);
         text-align: center;
         line-height: 18px;
     }
@@ -70,7 +70,7 @@
                 top: 40px; left: 25px;
                 // margin-top: 40px;
                 // margin-left: 25px;
-                @include font_musinsa_s($w: 500, $c: #fff);
+                @include font_musinsa_s($w: 500, $c: $color_white);
             }
             h2{
                 position: absolute;
@@ -80,19 +80,19 @@
                 // margin-top: 75px;
                 // margin-left: 25px;
                 align-items: flex-end;
-                @include font_musinsa_l($w: 500, $c: #fff);
+                @include font_musinsa_l($w: 500, $c: $color_white);
             }
             .visual__txt--bottom{
                 position: absolute;
                 bottom: 70px; left: 25px;
                 // margin-top: 10px;
                 // margin-left: 25px;
-                @include font_system_m($w: 400, $c: #fff);
+                @include font_system_m($w: 400, $c: $color_white);
             }
         }
     }
-    #{$this}-pagination-bullet {margin-bottom: 25px; background: #fff;}
-    #{$this}-pagination-bullet-active{background: #fff;}
+    #{$this}-pagination-bullet {margin-bottom: 25px; background: $color_white;}
+    #{$this}-pagination-bullet-active{background: $color_white;}
 }
 
 /*----- 랭킹, 코디, 업데이트 -----*/
@@ -104,7 +104,7 @@
 .main-tab__menu{
     width: 100%; height: 40px;
     border-radius: 6px;
-    background-color: #F5F5F5;
+    background-color: $color_oldgray1;
     margin: 15px 0;
     ul{
         width: 100%; height: 100%;
@@ -118,15 +118,15 @@
                 display: inline-block;
                 width: 100%; height: 100%;
                 text-align: center;
-                @include font_musinsa_xs($w: 500, $c: #aaa);
+                @include font_musinsa_xs($w: 500, $c: $color_oldgray6);
                 line-height: 39px; //40px - 1px
             }
             &.target{
                 border: 1px solid #eee; box-sizing: border-box;
-                background-color: #fff;
+                background-color: $color_white;
                 border-radius: 4px;
                 a{
-                    @include font_musinsa_xs($w: 500, $c: #000);
+                    @include font_musinsa_xs($w: 500, $c: $color_black);
                     line-height: 39px; //40px - 1px
                 }
 
@@ -153,7 +153,7 @@
     &::after{content: ""; display: block; clear: both;}
     h3{
         float: left;
-        @include font_musinsa_m($w: 400, $c: #000);
+        @include font_musinsa_m($w: 400, $c: $color_black);
         line-height: 40px;
         padding-right: 8px;
     }
@@ -163,7 +163,7 @@
         a{
             display: inline-block;
             height: 100%;
-            @include font_system_s($w: 400, $c: #777);
+            @include font_system_s($w: 400, $c: $color_oldgray7);
             line-height: 40px;
             img{display: inline-block; margin-left: 2px;}
         }
@@ -175,7 +175,7 @@
         a{
             display: inline-block;
             height: 100%;
-            @include font_system_m($w: 400, $c: #000);
+            @include font_system_m($w: 400, $c: $color_black);
             line-height: 40px;
             img{display: inline-block; margin-left: 5px;}
         }
@@ -199,15 +199,15 @@
             &:last-of-type{margin-right: 0;}
             a{
                 display: inline-block;
-                @include font_system_m($w: 400, $c: #aaa);
+                @include font_system_m($w: 400, $c: $color_oldgray6);
                 padding: 5px 10px 4px;
-                border: 1px solid #aaa; box-sizing: border-box;
+                border: 1px solid $color_oldgray6; box-sizing: border-box;
                 border-radius: 4px;
             }
             &.target{
                 a{
-                    @include font_system_m($w: 700, $c: #000);
-                    border: 1px solid #000;
+                    @include font_system_m($w: 700, $c: $color_black);
+                    border: 1px solid $color_black;
                 }
             }
 
@@ -232,29 +232,29 @@
                 padding-top: 10px;
                 padding-right: 3px;
                 box-sizing: border-box;
-                @include font_system_s($w:400, $c: #777);
+                @include font_system_s($w:400, $c: $color_oldgray7);
             }
             .goods-list__price{
                 padding-right: 3px;
                 box-sizing: border-box;
                 position: relative;
-                @include font_musinsa_s($w:500, $c: #000);
+                @include font_musinsa_s($w:500, $c: $color_black);
                 &.coupon::after{
                     content: "쿠폰";
                     position: absolute;
                     top: 50%; right: 2px; transform: translateY(-50%);
                     width: 22px; height: 15px;
-                    background-color: #4162C9;
+                    background-color: $color_blue2;
                     border-radius: 2px;
                     text-align: center;
-                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: #fff);
+                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: $color_white);
                 }
                 span{
                     position: absolute;
                     top: 50%; right: 2px; transform: translateY(-50%);
                     display: inline-block;
                     margin-right: 2px;
-                    @include font_musinsa($w: 500, $s: 10px, $lh: 13px, $c: #FF0000);
+                    @include font_musinsa($w: 500, $s: 10px, $lh: 13px, $c: $color_red1);
                 }
             }
             //순위 라벨
@@ -264,9 +264,9 @@
                     width: 20px; height: 20px;
                     position: absolute;
                     top: 0; left: 0;
-                    background-color: #aaa;
+                    background-color: $color_oldgray6;
                     text-align: center;
-                    @include font_musinsa($w: 500, $s: 12px, $lh: 20px, $c: #fff);
+                    @include font_musinsa($w: 500, $s: 12px, $lh: 20px, $c: $color_white);
                 }
             }
             &:nth-of-type(1),
@@ -277,12 +277,12 @@
                 .goods-list__price{
                     padding-right: 5px;
                     &.coupon::after{right: 5px;}
-                    span{@include font_musinsa($w: 500, $s: 15px, $lh: 22px, $c: #FF0000); right: 5px;}
+                    span{@include font_musinsa($w: 500, $s: 15px, $lh: 22px, $c: $color_red1); right: 5px;}
                 }
                 //1st, 2nd 순위 라벨 
                 &::after{
                     width: 24px; height: 24px;
-                    background-color: #333;
+                    background-color: $color_oldgray9;
                     line-height: 24px;
                 }
             }
@@ -302,12 +302,12 @@
         border-radius: 6px;
     }
     #{$this}-pagination-bullets {bottom: -25px !important;}
-    #{$this}-pagination-bullet-active{background: #000;}
+    #{$this}-pagination-bullet-active{background: $color_black;}
 }
 .sub-banner.type1{
     $this: '.swiper';
     #{$this}-slide{
-        background-color: #F9F9F9;
+        background-color: $color_oldgray1;
         display: flex; justify-content: flex-start; align-items: center; flex-wrap: nowrap;
         img{
             width: 135px; height: 100%; object-fit: contain;
@@ -321,7 +321,7 @@
             span{
                 display: block;
                 padding-top: 3px;
-                @include font_system_s($w: 400, $c: #777);
+                @include font_system_s($w: 400, $c: $color_oldgray7);
             }
         }
     }
@@ -339,10 +339,10 @@
             position: absolute;
             top: 50%; left: 15px; transform: translateY(-50%);
             p{
-                @include font_musinsa_s($w: 500, $c: #fff)
+                @include font_musinsa_s($w: 500, $c: $color_white)
             }
             span{
-                @include font_musinsa($w: 500, $s: 14px, $lh: 21px, $c: #fff);
+                @include font_musinsa($w: 500, $s: 14px, $lh: 21px, $c: $color_white);
                 opacity: 65%;
             }
         }
@@ -366,29 +366,29 @@
                 padding-top: 10px;
                 padding-right: 3px;
                 box-sizing: border-box;
-                @include font_system_s($w:400, $c: #777);
+                @include font_system_s($w:400, $c: $color_oldgray7);
             }
             .goods-list__price{
                 padding-right: 3px;
                 box-sizing: border-box;
-                @include font_musinsa_xs($w:500, $c: #000);
+                @include font_musinsa_xs($w:500, $c: $color_black);
                 &::after{content: ""; display: block; clear:both;}
                 .discount{
                     float: right;
                     display: inline-block;
                     margin-top: 3px;
                     margin-right: 2px;
-                    @include font_musinsa($w: 500, $s: 10px, $lh: 13px, $c: #FF0000);
+                    @include font_musinsa($w: 500, $s: 10px, $lh: 13px, $c: $color_red1);
                 }
                 .coupon{
                     float: right;
                     display: inline-block;
                     // width: 22px; height: 15px;
-                    // background-color: #4162C9;
+                    // background-color: $color_blue2;
                     // border-radius: 2px;
                     margin-top: 2px;
                     text-align: center;
-                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: #4162C9);
+                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: $color_blue2);
                 }
             }
             //순위 라벨
@@ -398,15 +398,15 @@
                     width: 20px; height: 20px;
                     position: absolute;
                     top: 0; left: 0;
-                    background-color: #aaa;
+                    background-color: $color_oldgray6;
                     text-align: center;
-                    @include font_musinsa($w: 500, $s: 12px, $lh: 20px, $c: #fff);
+                    @include font_musinsa($w: 500, $s: 12px, $lh: 20px, $c: $color_white);
                 }
             }
         }
     }
 }
-.ranking__refresh{padding-top: 20px; @include font_system_s($w:400, $c: #aaa);}
+.ranking__refresh{padding-top: 20px; @include font_system_s($w:400, $c: $color_oldgray6);}
 .main-btn{
     width: 100%; height: 100%;
     text-align: center;
@@ -420,7 +420,7 @@
     border-radius: 20px;
     box-sizing: border-box;
     height: 40px;
-    @include font_system_m($w: 400, $c: #777);
+    @include font_system_m($w: 400, $c: $color_oldgray7);
     line-height: 40px;
     img{
         display: inline-block;
@@ -465,9 +465,9 @@
 }
 .coordi__goods-link__txt{
     padding-left: 10px;
-    p{@include font_system_s($w: 400, $c: #777);}
-    .coordi__goods-link__price{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: #000);}
-    .coordi__goods-link__discount{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: #ff0000); padding-left: 3px;}
+    p{@include font_system_s($w: 400, $c: $color_oldgray7);}
+    .coordi__goods-link__price{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: $color_black);}
+    .coordi__goods-link__discount{display: inline-block; @include font_musinsa($w: 500, $s: 12px, $lh: 18px, $c: $color_red1); padding-left: 3px;}
 }
 /* 숍, 맵, 스냅 */ 
 .coordi-list__menu{
@@ -487,7 +487,7 @@
 .coordi-list__tab{
     position: relative;
     a{
-        color: #000;
+        color: $color_black;
         img{
             width: 100%; height: 100%;
         }
@@ -497,7 +497,7 @@
             display: inline-block;
             text-align: center;
             width: 100%; height: 36px;
-            background-color: #f9f9f9;
+            background-color: $color_oldgray1;
             @include font_system_s($w: 400, $c: 000);
             line-height: 36px;
             border-bottom-left-radius: 5px;
@@ -524,15 +524,16 @@
 .update-article__list{
     img{
         width: 100%; height: 30vw;
+        max-height: 250px;
         object-fit: cover;
         border-radius: 6px;
     }
     p{
         padding: 10px 0 3px 0;
-        @include font_system_m($w: 400, $c: #000);
+        @include font_system_m($w: 400, $c: $color_black);
     }
     span{
-        @include font_system_s($w: 400, $c: #777);
+        @include font_system_s($w: 400, $c: $color_oldgray7);
     }
 }
 .main-btn--refresh{
@@ -543,7 +544,7 @@
     border-radius: 20px;
     box-sizing: border-box;
     height: 40px;
-    @include font_system_m($w: 400, $c: #777);
+    @include font_system_m($w: 400, $c: $color_oldgray7);
     line-height: 40px;
     position: relative;
     img{
@@ -559,7 +560,7 @@
         display: inline-block;
         width: 100%;
         text-align: center;
-        @include font_musinsa_m($w: 500, $c: #000);
+        @include font_musinsa_m($w: 500, $c: $color_black);
         line-height: 40px;
         padding-right: 8px;
     }
@@ -570,7 +571,7 @@
     a{
         display: inline-block;
         height: 100%;
-        @include font_system_s($w: 400, $c: #777);
+        @include font_system_s($w: 400, $c: $color_oldgray7);
         line-height: 40px;
         img{display: inline-block; margin-left: 2px;}
     }
@@ -581,6 +582,7 @@
         li{
             float: left;
             width: 24%; height: 25vw;
+            max-height: 250px;
             margin-right: 1%;
             margin-bottom: 4px;
             &:nth-of-type(4n){margin-right: 0;}
@@ -601,17 +603,17 @@
     p{
         text-align: center;
         width: 100%;
-        @include font_system_s($w:400, $c:#000);
+        @include font_system_s($w:400, $c:$color_black);
         span{
-            @include font_musinsa($w:500, $s: 16px, $lh: 24px, $c: #000);
+            @include font_musinsa($w:500, $s: 16px, $lh: 24px, $c: $color_black);
         }
     }
     a{
         display: inline-block;
         width: 58px; height: 22px;
-        border: 1px solid #ccc; box-sizing: border-box;
+        border: 1px solid $color_oldgray5; box-sizing: border-box;
         border-radius: 4px;
-        @include font_system_s($w:400, $c:#000);
+        @include font_system_s($w:400, $c:$color_black);
         line-height: 22px;
         text-align: center;
         margin-top: 5px;
@@ -619,11 +621,11 @@
 }
 .update-news__list__title{
     padding-top: 5px;
-    @include font_system_m($w: 400, $c: #000);
+    @include font_system_m($w: 400, $c: $color_black);
 }
 .update-news__list__sub{
     padding-bottom: 30px;
-    @include font_musinsa($w: 400, $s: 12px, $lh: 15px, $c:#777);
+    @include font_musinsa($w: 400, $s: 12px, $lh: 15px, $c:$color_oldgray7);
 }
 
 @media screen and (min-width: 641px){

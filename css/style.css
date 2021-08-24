@@ -21,6 +21,7 @@ fieldset, input, select, button, textarea {
   top: -9999px;
   opacity: 0; }
 
+/* color */
 /* font */
 /* background img */
 /*----- header -----*/
@@ -50,7 +51,7 @@ fieldset, input, select, button, textarea {
     content: "";
     width: 4px;
     height: 4px;
-    background-color: #0078FF;
+    background-color: #0078ff;
     border-radius: 2px;
     position: absolute;
     top: 0;
@@ -64,7 +65,7 @@ fieldset, input, select, button, textarea {
   .header-bag .header-bag__badge {
     width: 18px;
     height: 18px;
-    background-color: #0078FF;
+    background-color: #0078ff;
     border-radius: 9px;
     position: absolute;
     bottom: -3px;
@@ -149,7 +150,7 @@ fieldset, input, select, button, textarea {
   width: 100%;
   height: 40px;
   border-radius: 6px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin: 15px 0; }
   .main-tab__menu ul {
     width: 100%;
@@ -355,7 +356,7 @@ fieldset, input, select, button, textarea {
         font-size: 10px;
         line-height: 13px;
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        color: #FF0000; }
+        color: #ff0000; }
     .ranking__goods-list--top ul li:nth-of-type(1)::after {
       content: "1";
       width: 20px;
@@ -445,7 +446,7 @@ fieldset, input, select, button, textarea {
           font-size: 15px;
           line-height: 22px;
           font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-          color: #FF0000;
+          color: #ff0000;
           right: 5px; }
       .ranking__goods-list--top ul li:nth-of-type(1)::after, .ranking__goods-list--top ul li:nth-of-type(2)::after {
         width: 24px;
@@ -469,7 +470,7 @@ fieldset, input, select, button, textarea {
     background: #000; }
 
 .sub-banner.type1 .swiper-slide {
-  background-color: #F9F9F9;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -573,7 +574,7 @@ fieldset, input, select, button, textarea {
         font-size: 10px;
         line-height: 13px;
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        color: #FF0000; }
+        color: #ff0000; }
       .ranking__goods-list ul li .goods-list__price .coupon {
         float: right;
         display: inline-block;
@@ -884,7 +885,7 @@ fieldset, input, select, button, textarea {
       text-align: center;
       width: 100%;
       height: 36px;
-      background-color: #f9f9f9;
+      background-color: #f5f5f5;
       font-weight: 400;
       font-size: 12px;
       line-height: 18px;
@@ -913,6 +914,7 @@ fieldset, input, select, button, textarea {
 .update-article__list img {
   width: 100%;
   height: 30vw;
+  max-height: 250px;
   object-fit: cover;
   border-radius: 6px; }
 .update-article__list p {
@@ -992,6 +994,7 @@ fieldset, input, select, button, textarea {
   float: left;
   width: 24%;
   height: 25vw;
+  max-height: 250px;
   margin-right: 1%;
   margin-bottom: 4px; }
   .update-news__list ul li:nth-of-type(4n) {
