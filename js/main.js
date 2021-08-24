@@ -1,11 +1,17 @@
 /*----- DOM Caching -----*/
-var $main_tab__menu = $(".main-tab__menu").children("ul").children("li");
-var $main_tab__content = $(".main-tab__content").children("div");
-var $sub_tab = $(".sub-tab");
-var $sub_tab__menu = $sub_tab.children("ul").children("li");
+const $main_tab__menu = $(".main-tab__menu").children("ul").children("li");
+const $main_tab__content = $(".main-tab__content").children("div");
+const $sub_tab = $(".sub-tab");
+const $sub_tab__menu = $sub_tab.children("ul").children("li");
+const rankingTarget = $("#main-tab__menu__ranking .ranking__goods-list ul");
+const resultRankingList = callRankingList();
 let isDone = true;
 
 /*----- function -----*/
+//ranking
+createRankingList(rankingTarget, resultRankingList);
+
+
 
 
 /*----- event -----*/
@@ -48,9 +54,42 @@ function tabActivation(index, item){
     item.eq(index).addClass("target"); 
     isDone = true;
 }
-function subTabScroll(){
+
+//랭킹 리스트 ajax 호출
+function callRankingList(){
+    let result;
+    $.ajax({
+        url : "data/ranking.json",
+        data : "json",
+        async : false
+    })
+    .success(function(data){
+        result = data.ranking;
+    })
+    .error(function(err){
+        console.log(err);
+    });
+    return result;
+}
+//랭킹 리스트 동적 생성
+function createRankingList(target, data){
+    for(var i=0 ; i<data.length ; i++){
+        target.append(
+            $("<li>").append(
+                $("<img>").attr({
+                    src: data[i].imgSrc,
+                    alt: data[i].imgAlt
+                }),
+                $("<p class='goods-list__store'>").text(data[i].store),
+                $("<p class='goods-list__price'>").text(data[i].price),
+            )
+        )
+    }
+    
 
 }
+
+
 
 
 

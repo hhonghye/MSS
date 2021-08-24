@@ -1,0 +1,136 @@
+{
+    "ranking" : [
+        {
+            "imgSrc" : "img/main/ranking/goods/img1.jpg",
+            "imgAlt" : "랭킹 상품 이미지 1",
+            "store" : "5252 바이 오아이",
+            "price" : "530,000원"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img2.jpg",
+            "imgAlt" : "랭킹 상품 이미지 2",
+            "store" : "엠엠지엘",
+            "price" : "269,000원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img3.jpg",
+            "imgAlt" : "랭킹 상품 이미지 3",
+            "store" : "엄브로",
+            "price" : "149,900원",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img4.jpg",
+            "imgAlt" : "랭킹 상품 이미지 4",
+            "store" : "알파 인더스트리",
+            "price" : "209,300원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img5.jpg",
+            "imgAlt" : "랭킹 상품 이미지 5",
+            "store" : "예일",
+            "price" : "55,200원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img6.jpg",
+            "imgAlt" : "랭킹 상품 이미지 6",
+            "store" : "멜란지 마스터",
+            "price" : "39,900원",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img7.jpg",
+            "imgAlt" : "랭킹 상품 이미지 7",
+            "store" : "커버낫",
+            "price" : "77,400원",
+            "discount" : "20%",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img8.jpg",
+            "imgAlt" : "랭킹 상품 이미지 8",
+            "store" : "무신사 스탠다드",
+            "price" : "32,900원",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img9.jpg",
+            "imgAlt" : "랭킹 상품 이미지 9",
+            "store" : "인사일런스",
+            "price" : "231,000원",
+            "discount" : "20%",
+            "coupon" : true
+        }
+
+    ],
+    "ranking2" : [
+        {
+            "imgSrc" : "img/main/ranking/goods/img9.jpg",
+            "imgAlt" : "랭킹 상품 이미지 9",
+            "store" : "아디다스",
+            "price" : "49,900원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img8.jpg",
+            "imgAlt" : "랭킹 상품 이미지 8",
+            "store" : "스톤아일랜드",
+            "price" : "548,000원",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img7.jpg",
+            "imgAlt" : "랭킹 상품 이미지 7",
+            "store" : "토피",
+            "price" : "39,000원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img6.jpg",
+            "imgAlt" : "랭킹 상품 이미지 6",
+            "store" : "코치넬레",
+            "price" : "530,000원",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img5.jpg",
+            "imgAlt" : "랭킹 상품 이미지 5",
+            "store" : "예일",
+            "price" : "55,200원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img4.jpg",
+            "imgAlt" : "랭킹 상품 이미지 4",
+            "store" : "엠엘지엘",
+            "price" : "269,000원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img3.jpg",
+            "imgAlt" : "랭킹 상품 이미지 3",
+            "store" : "예일",
+            "price" : "55,200원",
+            "discount" : "20%"
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img2.jpg",
+            "imgAlt" : "랭킹 상품 이미지 2",
+            "store" : "멜란지 마스터",
+            "price" : "39,900원",
+            "coupon" : true
+        },
+        {
+            "imgSrc" : "img/main/ranking/goods/img1.jpg",
+            "imgAlt" : "랭킹 상품 이미지 1",
+            "store" : "커버낫",
+            "price" : "77,400원",
+            "discount" : "20%",
+            "coupon" : true
+        }
+
+    ]
+}
