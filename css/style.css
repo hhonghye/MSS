@@ -972,4 +972,77 @@ fieldset, input, select, button, textarea {
       display: inline-block;
       margin-left: 2px; }
 
+.update-news__list ul::after {
+  content: "";
+  display: block;
+  clear: both; }
+.update-news__list ul li {
+  float: left;
+  width: 24%;
+  height: 25vw;
+  margin-right: 1%;
+  margin-bottom: 4px; }
+  .update-news__list ul li:nth-of-type(4n) {
+    margin-right: 0; }
+  .update-news__list ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.update-news__list__showall {
+  position: relative; }
+
+.update-news__list__showall__txt {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center; }
+  .update-news__list__showall__txt p {
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #000; }
+    .update-news__list__showall__txt p span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+      color: #000; }
+  .update-news__list__showall__txt a {
+    display: inline-block;
+    width: 58px;
+    height: 22px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #000;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 5px; }
+
+.update-news__list__title {
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  color: #000; }
+
+.update-news__list__sub {
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  color: #777; }
+
 /*# sourceMappingURL=style.css.map */

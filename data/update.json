@@ -1,0 +1,43 @@
+{
+    "update_birkenstock" : [
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "imgSrc" : "img/main/update/news/img1.jpg",
+            "imgAlt" : "업데이트 소식 제품 이미지 1",
+            "aHref" : "#"
+        },
+        {
+            "product" : "58"
+        }
+
+    ]
+}

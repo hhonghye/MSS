@@ -3,13 +3,17 @@ const $main_tab__menu = $(".main-tab__menu").children("ul").children("li");
 const $main_tab__content = $(".main-tab__content").children("div");
 const $sub_tab = $(".sub-tab");
 const $sub_tab__menu = $sub_tab.children("ul").children("li");
-const rankingTarget = $("#main-tab__menu__ranking .ranking__goods-list ul");
+const rankingTarget = $(".ranking__goods-list ul");
+const updateTarget = $(".update-news__list.birkenstock ul");
 const resultRankingList = callRankingList();
+const resultUpdateList = callUpdateList();
 let isDone = true;
 
 /*----- function -----*/
-//ranking
+//ranking list
 createRankingList(rankingTarget, resultRankingList);
+//update list
+createUpdateNewsList(updateTarget, resultUpdateList);
 
 
 
@@ -71,6 +75,22 @@ function callRankingList(){
     });
     return result;
 }
+//업데이트 리스트 ajax 호출
+function callUpdateList(){
+    let result;
+    $.ajax({
+        url : "data/update.json",
+        data : "json",
+        async : false
+    })
+    .success(function(data){
+        result = data.update_birkenstock;
+    })
+    .error(function(err){
+        console.log(err);
+    });
+    return result;
+}
 //랭킹 리스트 동적 생성
 function createRankingList(target, data){
     for(var i=0 ; i<data.length ; i++){
@@ -93,9 +113,9 @@ function createRankingList(target, data){
 }
 //코디 리스트 동적 생성
 function createCoordiList(target, data){
-    for(var i=0 ; i<data.length ; i++){
+    for(let i=0 ; i<data.length ; i++){
         target.append(
-            $("li").append(
+            $("<li>").append(
                 $("<a class='coordi__coordi-link'>").append(
                     $("<img>").attr({
                         src: data[i].imgSrc,
@@ -106,7 +126,37 @@ function createCoordiList(target, data){
         )
     }
 }
+//업데이트 소식 리스트 동적 생성
+function createUpdateNewsList(target, data){
+    for(let i=0 ; i<7 ; i++){
+        target.append(
+            $("<li>").append(
+                $("<a>")
+                    .attr({href : data[i].aHref})
+                    .append(
+                        $("<img>")
+                            .attr({
+                                src: data[i].imgSrc,
+                                alt: data[i].imgAlt
+                            })
+                    )
+            )
+        )
+    }
+    target.append(
+        $("<li class='update-news__list__showall'>").append(
+            $("<div class='update-news__list__showall__txt'>").append(
+                $("<p>")
+                    .prepend(
+                        $("<span>").text(data[7].product)
+                    )
+                    .text("개 상품"),
+                    $("<a>").text("전체보기")
+            )
+        )
+    )
 
+}
 
 
 
