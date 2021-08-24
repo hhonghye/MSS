@@ -90,8 +90,21 @@ function createRankingList(target, data){
             )
         )
     }
-    
-
+}
+//코디 리스트 동적 생성
+function createCoordiList(target, data){
+    for(var i=0 ; i<data.length ; i++){
+        target.append(
+            $("li").append(
+                $("<a class='coordi__coordi-link'>").append(
+                    $("<img>").attr({
+                        src: data[i].imgSrc,
+                        alt: data[i].imgAlt
+                    })
+                )
+            )
+        )
+    }
 }
 
 

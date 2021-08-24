@@ -1,0 +1,41 @@
+{
+    "coordi" : [
+        {
+            "imgSrc" : "img/main/coordi/img1.jpg",
+            "imgAlt" : "랭킹 상품 이미지 1"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img2.jpg",
+            "imgAlt" : "랭킹 상품 이미지 2"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img3.jpg",
+            "imgAlt" : "랭킹 상품 이미지 3"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img4.jpg",
+            "imgAlt" : "랭킹 상품 이미지 4"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img5.jpg",
+            "imgAlt" : "랭킹 상품 이미지 5"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img6.jpg",
+            "imgAlt" : "랭킹 상품 이미지 6"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img7.jpg",
+            "imgAlt" : "랭킹 상품 이미지 7"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img8.jpg",
+            "imgAlt" : "랭킹 상품 이미지 8"
+        },
+        {
+            "imgSrc" : "img/main/coordi/img9.jpg",
+            "imgAlt" : "랭킹 상품 이미지 9"
+        }
+
+    ]
+}

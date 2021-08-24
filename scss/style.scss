@@ -495,7 +495,7 @@
 }
 
 /* 업데이트 */
-.update-news{
+.update-article{
     width: 100%;
     ul{
         &::after{content: ""; display: block; clear: both;}
@@ -509,7 +509,7 @@
         }
     }
 }
-.update-news__list{
+.update-article__list{
     img{
         width: 100%; height: 30vw;
         object-fit: cover;
@@ -537,5 +537,29 @@
     img{
         position: absolute;
         top: 50%; left: 16px; transform: translateY(-50%);
+    }
+}
+.update__title{
+    width: 100%; height: 40px;
+    padding-top: 60px;
+    position: relative;
+    h3{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        @include font_musinsa_m($w: 500, $c: #000);
+        line-height: 40px;
+        padding-right: 8px;
+    }
+}
+.update__title__entire{
+    position: absolute;
+    bottom: 0; right: 0;
+    a{
+        display: inline-block;
+        height: 100%;
+        @include font_system_s($w: 400, $c: #777);
+        line-height: 40px;
+        img{display: inline-block; margin-left: 2px;}
     }
 }

@@ -883,34 +883,34 @@ fieldset, input, select, button, textarea {
       border-bottom-right-radius: 5px; }
 
 /* 업데이트 */
-.update-news {
+.update-article {
   width: 100%; }
-  .update-news ul::after {
+  .update-article ul::after {
     content: "";
     display: block;
     clear: both; }
-  .update-news ul li {
+  .update-article ul li {
     float: left;
     width: 49%;
     margin-right: 2%;
     margin-bottom: 25px;
     box-sizing: border-box; }
-    .update-news ul li:nth-of-type(even) {
+    .update-article ul li:nth-of-type(even) {
       margin-right: 0; }
 
-.update-news__list img {
+.update-article__list img {
   width: 100%;
   height: 30vw;
   object-fit: cover;
   border-radius: 6px; }
-.update-news__list p {
+.update-article__list p {
   padding: 10px 0 3px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
   color: #000; }
-.update-news__list span {
+.update-article__list span {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -937,5 +937,39 @@ fieldset, input, select, button, textarea {
     top: 50%;
     left: 16px;
     transform: translateY(-50%); }
+
+.update__title {
+  width: 100%;
+  height: 40px;
+  padding-top: 60px;
+  position: relative; }
+  .update__title h3 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #000;
+    line-height: 40px;
+    padding-right: 8px; }
+
+.update__title__entire {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  .update__title__entire a {
+    display: inline-block;
+    height: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    color: #777;
+    line-height: 40px; }
+    .update__title__entire a img {
+      display: inline-block;
+      margin-left: 2px; }
 
 /*# sourceMappingURL=style.css.map */
