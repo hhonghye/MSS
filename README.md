@@ -18,6 +18,7 @@
 
 ### CSS
   1. SCSS, _mixin.scss에 system font와 musinsa font를 사이즈별로(xs,s,m,l) 컴포넌트화 시켜 유지보수시 폰트 구성 수정을 용이하게 하였습니다.
+      - color도 구성시켜 색 수정이 용이합니다.
   2. BEM 방법론을 사용하여 보다 쉽게 태그의 의미를 파악하도록 하였고 독립된 모듈로 표현하기 위해 노력했습니다.
 
 ### Java Script
