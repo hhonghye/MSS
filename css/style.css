@@ -553,12 +553,18 @@ fieldset, input, select, button, textarea {
       padding-right: 3px;
       box-sizing: border-box;
       font-weight: 500;
-      font-size: 15px;
-      line-height: 22px;
+      font-size: 13px;
+      line-height: 19px;
       font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
       color: #000; }
+      .ranking__goods-list ul li .goods-list__price::after {
+        content: "";
+        display: block;
+        clear: both; }
       .ranking__goods-list ul li .goods-list__price .discount {
+        float: right;
         display: inline-block;
+        margin-top: 3px;
         margin-right: 2px;
         font-weight: 500;
         font-size: 10px;
@@ -566,17 +572,15 @@ fieldset, input, select, button, textarea {
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         color: #FF0000; }
       .ranking__goods-list ul li .goods-list__price .coupon {
+        float: right;
         display: inline-block;
-        width: 22px;
-        height: 15px;
-        background-color: #4162C9;
-        border-radius: 2px;
+        margin-top: 2px;
         text-align: center;
         font-weight: 500;
         font-size: 9px;
         line-height: 15px;
         font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        color: #fff; }
+        color: #4162C9; }
     .ranking__goods-list ul li:nth-of-type(1)::after {
       content: "6";
       width: 20px;

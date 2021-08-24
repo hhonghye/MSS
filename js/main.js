@@ -81,7 +81,12 @@ function createRankingList(target, data){
                     alt: data[i].imgAlt
                 }),
                 $("<p class='goods-list__store'>").text(data[i].store),
-                $("<p class='goods-list__price'>").text(data[i].price),
+                $("<p class='goods-list__price'>")
+                    .text(data[i].price)
+                    .append(
+                        $("<span class='coupon'>").text(data[i].coupon),
+                        $("<span class='discount'>").text(data[i].discount)
+                    )
             )
         )
     }

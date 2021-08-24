@@ -368,19 +368,24 @@
             .goods-list__price{
                 padding-right: 3px;
                 box-sizing: border-box;
-                @include font_musinsa_s($w:500, $c: #000);
+                @include font_musinsa_xs($w:500, $c: #000);
+                &::after{content: ""; display: block; clear:both;}
                 .discount{
+                    float: right;
                     display: inline-block;
+                    margin-top: 3px;
                     margin-right: 2px;
                     @include font_musinsa($w: 500, $s: 10px, $lh: 13px, $c: #FF0000);
                 }
                 .coupon{
+                    float: right;
                     display: inline-block;
-                    width: 22px; height: 15px;
-                    background-color: #4162C9;
-                    border-radius: 2px;
+                    // width: 22px; height: 15px;
+                    // background-color: #4162C9;
+                    // border-radius: 2px;
+                    margin-top: 2px;
                     text-align: center;
-                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: #fff);
+                    @include font_musinsa($w: 500, $s: 9px, $lh: 15px, $c: #4162C9);
                 }
             }
             //순위 라벨
