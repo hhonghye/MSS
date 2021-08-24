@@ -224,7 +224,8 @@
             cursor: pointer;
             position: relative;
             img{
-                width: 100%; height: 36vw;
+                width: 100%; height: 36vw; 
+                max-height: 250px;
                 object-fit: contain;
             }
             .goods-list__store{
@@ -358,6 +359,7 @@
             position: relative;
             img{
                 width: 100%; height: 36vw;
+                max-height: 250px;
                 object-fit: contain;
             }
             .goods-list__store{
@@ -613,4 +615,11 @@
 .update-news__list__sub{
     padding-bottom: 30px;
     @include font_musinsa($w: 400, $s: 12px, $lh: 15px, $c:#777);
+}
+
+@media screen and (min-width: 641px){
+    body{
+        width: 640px;
+        margin: 0 auto;
+    }
 }

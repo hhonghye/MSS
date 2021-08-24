@@ -308,6 +308,7 @@ fieldset, input, select, button, textarea {
     .ranking__goods-list--top ul li img {
       width: 100%;
       height: 36vw;
+      max-height: 250px;
       object-fit: contain; }
     .ranking__goods-list--top ul li .goods-list__store {
       padding-top: 10px;
@@ -540,6 +541,7 @@ fieldset, input, select, button, textarea {
     .ranking__goods-list ul li img {
       width: 100%;
       height: 36vw;
+      max-height: 250px;
       object-fit: contain; }
     .ranking__goods-list ul li .goods-list__store {
       padding-top: 10px;
@@ -1045,5 +1047,10 @@ fieldset, input, select, button, textarea {
   line-height: 15px;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
   color: #777; }
+
+@media screen and (min-width: 641px) {
+  body {
+    width: 640px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
