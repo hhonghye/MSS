@@ -82,6 +82,7 @@ $update_sub_tab_menu.on("click", function(e){
 })
 
 //sub tab scrollX
+//-----1. sub menu tab시 main menu tab 동작 안됨 2. posX 정확한 수치 체크
 $ranking_sub_tab_menu.on("click", function(e){
     e.preventDefault();
 
@@ -95,15 +96,42 @@ $ranking_sub_tab_menu.on("click", function(e){
             isDone = false;
         });
     }
+})
+$coordi_sub_tab_brand_menu.on("click", function(e){
+    e.preventDefault();
 
+    let posX = parseInt($(this).offset().left);
+    console.log(posX);
 
-    // let tabWid = $(this).width();
-    // let tabLen = $ranking_sub_tab_menu.length;
-    // let tabTargetIndex = $(this).parent().find(".target").index();
-    // console.log(tabWid,tabLen,tabTargetIndex);
+    if(isDone){
+        $(".coordi__sub-tab--brand ul").animate({scrollLeft: posX - 50}, 300, function(){
+            isDone = false;
+        });
+    }
+})
+$coordi_sub_tab_style_menu.on("click", function(e){
+    e.preventDefault();
 
-    // $ranking_sub_tab_menu.each(function(index,data){
-    // })
+    let posX = parseInt($(this).offset().left);
+    console.log(posX);
+
+    if(isDone){
+        $(".coordi__sub-tab--style ul").animate({scrollLeft: posX - 50}, 300, function(){
+            isDone = false;
+        });
+    }
+})
+$update_sub_tab_menu.on("click", function(e){
+    e.preventDefault();
+
+    let posX = parseInt($(this).offset().left);
+    console.log(posX);
+
+    if(isDone){
+        $(".update__sub-tab ul").animate({scrollLeft: posX - 50}, 300, function(){
+            isDone = false;
+        });
+    }
 })
     
 /*----- function definition -----*/
