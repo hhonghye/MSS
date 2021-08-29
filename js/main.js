@@ -19,7 +19,7 @@ let isDone = true;
 createRankingList(rankingTarget, resultRankingList);
 //update list
 createUpdateNewsList(updateTarget, resultUpdateList);
-
+//sub tab scrollX
 
 /*----- event -----*/
 //main tab menu
@@ -80,19 +80,38 @@ $update_sub_tab_menu.on("click", function(e){
 
     tabActivation(i, $update_sub_tab_menu);
 })
-// var posX = $(this).offset().left;
+
+//sub tab scrollX
+$ranking_sub_tab_menu.on("click", function(e){
+    e.preventDefault();
+
+    let posX = parseInt($(this).offset().left);
+    console.log(posX);
+
+    // $(".ranking__sub-tab ul").animate({scrollLeft: posX - 50}, 300);
+
+    if(isDone){
+        $(".ranking__sub-tab ul").animate({scrollLeft: posX - 50}, 300, function(){
+            isDone = false;
+        });
+    }
 
 
+    // let tabWid = $(this).width();
+    // let tabLen = $ranking_sub_tab_menu.length;
+    // let tabTargetIndex = $(this).parent().find(".target").index();
+    // console.log(tabWid,tabLen,tabTargetIndex);
 
-
-
+    // $ranking_sub_tab_menu.each(function(index,data){
+    // })
+})
+    
 /*----- function definition -----*/
 function tabActivation(index, item){
 	item.removeClass("target"); 
     item.eq(index).addClass("target"); 
     isDone = true;
 }
-
 //랭킹 리스트 ajax 호출
 function callRankingList(){
     let result;
@@ -191,7 +210,17 @@ function createUpdateNewsList(target, data){
     )
 
 }
+//sub tab scrollX
+function subTabScroll(){
 
+    $sub_tab.children("ul").each(function(e){
+        let tabWid = $(this).width();
+        let tabLen = $(this).length;
+        let tabTargetIndex = $(this).find(".target").index();
+
+        $sub_tab.scrollLeft((tabWid/tabLen) * tabTargetIndex);
+    })
+}
 
 
 
