@@ -3,6 +3,11 @@ const $main_tab__menu = $(".main-tab__menu").children("ul").children("li");
 const $main_tab__content = $(".main-tab__content").children("div");
 const $sub_tab = $(".sub-tab");
 const $sub_tab__menu = $sub_tab.children("ul").children("li");
+const $ranking_sub_tab_menu = $(".ranking__sub-tab").find("li");
+const $coordi_sub_tab_brand_menu = $(".coordi__sub-tab--brand").find("li");
+const $coordi_sub_tab_style_menu = $(".coordi__sub-tab--style").find("li");
+const $update_sub_tab_menu = $(".update__sub-tab").find("li");
+
 const rankingTarget = $(".ranking__goods-list ul");
 const updateTarget = $(".update-news__list.birkenstock ul");
 const resultRankingList = callRankingList();
@@ -14,8 +19,6 @@ let isDone = true;
 createRankingList(rankingTarget, resultRankingList);
 //update list
 createUpdateNewsList(updateTarget, resultUpdateList);
-
-
 
 
 /*----- event -----*/
@@ -37,7 +40,7 @@ $main_tab__menu.on("click", function(e){
 })
 
 //sub tab menu
-$sub_tab__menu.on("click", function(e){
+$ranking_sub_tab_menu.on("click", function(e){
     e.preventDefault();
 
     var hasTarget = $(this).hasClass("target");
@@ -45,12 +48,43 @@ $sub_tab__menu.on("click", function(e){
 
     var i = $(this).index();
 
-    tabActivation(i, $sub_tab__menu);
-
-    // var posX = $(this).offset().left;
-
-    
+    tabActivation(i, $ranking_sub_tab_menu);
 })
+$coordi_sub_tab_brand_menu.on("click", function(e){
+    e.preventDefault();
+
+    var hasTarget = $(this).hasClass("target");
+    if(hasTarget) return;
+
+    var i = $(this).index();
+
+    tabActivation(i, $coordi_sub_tab_brand_menu);
+})
+$coordi_sub_tab_style_menu.on("click", function(e){
+    e.preventDefault();
+
+    var hasTarget = $(this).hasClass("target");
+    if(hasTarget) return;
+
+    var i = $(this).index();
+
+    tabActivation(i, $coordi_sub_tab_style_menu);
+})
+$update_sub_tab_menu.on("click", function(e){
+    e.preventDefault();
+
+    var hasTarget = $(this).hasClass("target");
+    if(hasTarget) return;
+
+    var i = $(this).index();
+
+    tabActivation(i, $update_sub_tab_menu);
+})
+// var posX = $(this).offset().left;
+
+
+
+
 
 /*----- function definition -----*/
 function tabActivation(index, item){
@@ -171,10 +205,10 @@ var swiper = new Swiper('#visual', {
         dynamicBullets: true,
         clickable: true,
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false, //스와이프 후 자동재생
-    }
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false, //스와이프 후 자동재생
+    // }
 });
 var swiper = new Swiper('.sub-banner', {
     spaceBetween: 15,
@@ -184,8 +218,5 @@ var swiper = new Swiper('.sub-banner', {
       el: '.swiper-pagination',
       clickable: true,
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false, //스와이프 후 자동재생
-    }
+    // autop
   });
